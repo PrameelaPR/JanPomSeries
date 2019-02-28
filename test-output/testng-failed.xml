@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Hub Spot Application Regression Test Suite]" parallel="methods">
+  <test thread-count="3" name="hub spot regression Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.qa.hubspot.tests.ContactTest">
+        <methods>
+          <include name="createNewContactTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.ContactTest -->
+      <class name="com.qa.hubspot.tests.HomeTest">
+        <methods>
+          <include name="navigateToContactsPageTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyHomePageHeaderTest"/>
+          <include name="navigateToProfilePreferenceTest"/>
+        </methods>
+      </class> <!-- com.qa.hubspot.tests.HomeTest -->
+    </classes>
+  </test> <!-- hub spot regression Test(failed) -->
+</suite> <!-- Failed suite [Hub Spot Application Regression Test Suite] -->
